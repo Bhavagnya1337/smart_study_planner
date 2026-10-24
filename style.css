@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5efe5;
+    text-align: center;
+}
+
+header {
+    background-color: #e6dfd2;
+    padding: 30px 15px;
+}
+
+h1 {
+    color: #2457a7;
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+header p {
+    color: #555555;
+    margin: 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #2457a7;
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+}
+
+label {
+    color: #333333;
+    font-weight: bold;
+
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #c8d3e3;
+    border-radius: 7px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+input:focus {
+    outline: 2px solid #8aafe8;
+    border-color: #2457a7;
+}
+
+button {
+    background-color: #2457a7;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #194580;
+}
+
+#studyPlan {
+    background-color: #f5f8fd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+footer {
+    color: #666666;
+    padding: 15px;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
+
+input[type="date"] {
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Smart Study Planner</h1>
+        <p>Plan your tasks. Know what to do first.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Add Your Tasks</h2>
+            <p>Enter your tasks and deadlines to get your study plan.</p>
+
+            <form id="taskForm">
+                <label for="task">Task Name</label>
+                <input type="text" id="task" name="task"
+                       placeholder="Your Task"
+                       required>
+
+                
+                <input type="date" id="deadline" name="deadline"
+                    min="{{ today }}" required>
+
+                <div id="taskList"></div>
+
+                <button type="button" onclick="addTask()">Add Another Task</button>
+                <button type="submit">Generate My Plan</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Your Study Plan</h2>
+            <div id="studyPlan">
+                <p>Your suggested task order will appear here.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>One task at a time. You've got this!</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
